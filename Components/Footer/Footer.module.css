@@ -1,0 +1,44 @@
+.name {
+  color: white;
+}
+
+footer {
+  margin-top: 56px;
+  background-color: rgba(12, 9, 9, 0.92);
+  color: white;
+  padding: 10px 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social_links {
+  display: flex;
+  gap: 12px;
+}
+
+.social_link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social_links a {
+  color: white;
+}
+
+@media screen and (max-width:530px) {
+  .footer {
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width:330px) {
+  .footer .social_links {
+      flex-direction: column;
+  }
+}

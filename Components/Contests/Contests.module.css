@@ -1,0 +1,127 @@
+.data_card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  min-height: 450px;
+  overflow: hidden;
+  border-radius: 0.5em;
+  text-decoration: none;
+  background: white;
+  margin: 1em;
+  padding: 2.75em 2.5em;
+  box-shadow: 0 1.5em 2.5em -0.5em rgba(0, 0, 0, .1);
+  transition: transform 0.45s ease, background 0.45s ease;
+}
+
+.data_card .contestName {
+  color: #627084;
+  font-size: 30px;
+}
+
+
+.data_card .rank {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 23px;
+  letter-spacing: 3px;
+  transition: color 0.45s ease;
+  margin: 20px 0;
+}
+
+.data_card .link_text {
+  display: block;
+  color: #753bbd;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: auto 0 0;
+  transition: color 0.45s ease;
+}
+
+.data_card .link_text svg {
+  margin-left: 0.5em;
+  transition: transform 0.6s ease;
+}
+
+.data_card .link_text svg path {
+  transition: fill 0.45s ease;
+}
+
+.data_card:hover {
+  background: #753bbd;
+  transform: scale(1.02);
+}
+
+.data_card:hover h2,
+.data_card:hover p,
+.data_card:hover h4 {
+  color: #fff;
+  border-bottom-color: #a754c4;
+}
+
+.data_card:hover p {
+  opacity: 1;
+  transform: none;
+}
+
+.data_card:hover a {
+  opacity: 1;
+  transform: none;
+  color: white;
+}
+
+.data_card:hover .link_text {
+  color: #2e3c40;
+}
+
+.data_card:hover .link_text svg {
+  animation: point 1.25s infinite alternate;
+}
+
+.data_card:hover .link_text svg path {
+  fill: #fff;
+}
+
+.data_card p {
+  color: #2e3c40;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.data_card .contestLink {
+  color: #2e3c40;
+}
+
+@keyframes point {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(0.125em);
+  }
+}
+
+@media screen and (max-width:400px) {
+  .data_card {
+      padding: 15px;
+      min-height: 250px;
+  }
+
+  .data_card .contestName {
+      font-size: 20px;
+  }
+
+  .data_card .rank {
+      font-size: 15px;
+  }
+
+  .data_card .link_text {
+
+      font-size: 1.125em;
+  }
+
+  .data_card p {
+      font-size: 15px;
+  }
+}

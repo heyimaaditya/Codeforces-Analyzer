@@ -1,0 +1,73 @@
+.userArea {
+  background: #e7f3f1;
+  padding: 50px 0 100px;
+}
+
+.userInfo {
+  justify-content: space-between;
+  display: flex;
+  background-color: whitesmoke;
+  padding: 50px 100px;
+  width: 80%;
+  margin: 50px auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.infoArea {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoArea h3 {
+  color: tomato;
+  font-size: 23px;
+}
+
+h3 span {
+  color: black;
+  font-size: 20px;
+}
+
+h3 span a {
+  color: black;
+  font-size: 20px;
+}
+
+.imgArea img {
+  border-radius: 51%;
+  width: 300px;
+  height: 300px;
+
+}
+
+.imgArea h1 {
+  text-align: center;
+  color: #627084;
+  margin-top: 10px;
+}
+
+@media screen and (max-width:1150px) {
+  .userInfo {
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+
+@media screen and (max-width:530px) {
+  .userInfo {
+      margin: 0 auto;
+      width: 95%;
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+
+  .imgArea img {
+      width: 200px;
+      height: 200px;
+  }
+}

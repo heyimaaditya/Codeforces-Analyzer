@@ -1,0 +1,19 @@
+.blogArea {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7f3f1;
+  font-family: 'Open Sans', sans-serif;
+  padding: 50px 70px;
+  min-height: 100vh;
+}
+
+@media screen and (max-width:580px) {
+  .blogArea {
+      padding: 30px 20px;
+  }
+}

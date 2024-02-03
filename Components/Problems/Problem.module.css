@@ -1,0 +1,16 @@
+.table_row td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table_row tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table_row tr:hover {
+  background-color: #ddd;
+}
+
+.table_row td a {
+  color: black;
+}

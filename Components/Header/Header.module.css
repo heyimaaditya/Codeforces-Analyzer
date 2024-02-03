@@ -1,0 +1,145 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.772);
+  color: white;
+  padding: 10px 0px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+
+}
+
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logos {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav_links span {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.logoTitle {
+  font-size: 35px;
+  color: white;
+}
+
+.githubLogo {
+  font-size: 70px;
+  color: red;
+  transform: rotate(45deg);
+}
+
+
+
+.nav .logo a {
+  color: red;
+}
+
+.account a {
+  color: white;
+}
+
+.nav .logo span {
+  font-size: 30px;
+}
+
+.nav_links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav .nav_link {
+  display: flex;
+  gap: 10px;
+}
+
+.account {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.account a {
+  padding: 0;
+  margin: 0;
+}
+
+.bars {
+  display: none;
+  font-size: 50px;
+  position: relative;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1250px) {
+  .nav {
+      display: block
+  }
+
+  .nav_links {
+      display: none;
+      flex-direction: column;
+      margin: 30px 5%;
+  }
+
+  .bars {
+      display: block;
+  }
+
+  .navOpen {
+      display: flex;
+      flex-direction: column;
+      margin: 30px 5%;
+  }
+
+  .navClose {
+      display: none;
+  }
+
+}
+
+@media screen and (min-width:1251px) {
+  .nav {
+      display: flex;
+  }
+
+  .nav_links {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .bars {
+      display: none;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+  .logoTitle {
+      font-size: 25px;
+  }
+
+  .githubLogo {
+      font-size: 50px;
+  }
+
+  .bars {
+      font-size: 30px;
+      right: 0;
+  }
+}

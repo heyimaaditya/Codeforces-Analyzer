@@ -1,0 +1,86 @@
+.submissions {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7f3f1;
+  font-family: 'Open Sans', sans-serif;
+  padding: 50px 70px;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+.submissions form {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.submissions input {
+  font-size: 20px;
+  padding: 5px 10px;
+  width: 100%;
+  outline: none;
+}
+
+.submissions button {
+  padding: 10px 15px;
+  font-size: 30px;
+  cursor: pointer;
+  /* border: none; */
+  outline: none;
+}
+
+.submissions .subs {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media screen and (max-width:1000px) {
+  .submissions input {
+      font-size: 20px;
+      padding: 10px;
+  }
+
+  .submissions button {
+      padding: 5px 10px;
+      font-size: 20px;
+  }
+
+  .submissions form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 80%;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .submissions input {
+      font-size: 15px;
+      padding: 7px;
+  }
+
+  .submissions button {
+      padding: 3px 7px;
+      font-size: 15px;
+  }
+
+  .submissions form {
+      width: 90%;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .submissions {
+      padding: 10px;
+  }
+}

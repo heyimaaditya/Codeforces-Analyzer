@@ -1,0 +1,7 @@
+.pageNotFound {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: column;
+  min-height: 80vh;
+}
